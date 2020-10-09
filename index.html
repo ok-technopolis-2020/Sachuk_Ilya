@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+
+<body>
+    <div>
+
+        <div class="headline" role="heading">
+            <h1>todos</h1>
+        </div>
+
+        <div class="todo-panel">
+
+            <div class="top-panel">
+                <div class="todo-add-action">
+                    <button id="add-btn" aria-pressed="true"></button>
+                    <input type="text" placeholder="What needs to be done?" role="textbox">
+                </div>
+            </div>
+
+            <div class="main-panel">
+                <div class="todo-list">
+                    <div>
+                        <label class="list-item">
+                            <input type="checkbox" aria-checked="true">
+                            <span class="checkmark">HTML</span>
+                            <button aria-pressed="true"></button>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label class="list-item">
+                            <input type="checkbox" aria-checked="true">
+                            <span class="checkmark">CSS</span>
+                            <button aria-pressed="true"></button>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="list-item">
+                            <input type="checkbox" aria-checked="true">
+                            <span class="checkmark">JS</span>
+                            <button aria-pressed="true"></button>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="list-item">
+                            <input type="checkbox" aria-checked="true">
+                            <span class="checkmark">JS tools</span>
+                            <button aria-pressed="true"></button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-panel">
+                <div class="task-counter">
+                    <span class="checkmark">3 items left</span>
+                </div>
+
+                <div class="tabs">
+                    <button class="tablinks" id="all-btn" aria-pressed="true">All</button>
+                    <button class="tablinks" id="active-btn" aria-pressed="true">Active</button>
+                    <button class="tablinks" id="completed-btn" aria-pressed="true">Completed</button>
+                </div>
+
+                <div class="complete-btn">
+                    <button id="clear-complete-btn" aria-pressed="true">Clear completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
