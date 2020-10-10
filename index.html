@@ -8,37 +8,36 @@
 </head>
 
 <body>
-    <div>
+    <div class="todo-app">
 
-        <div class="headline" role="heading">
+        <header class="headline" role="heading">
             <h1>todos</h1>
-        </div>
+        </header>
 
-        <div class="todo-panel">
+        <main class="main-panel">
 
-            <div class="top-panel">
+            <section class="top-panel">
                 <div class="todo-add-action">
-                    <button id="add-btn" aria-pressed="true"></button>
-                    <input type="text" placeholder="What needs to be done?" role="textbox">
+                    <button class="select-all-tasks" aria-label="select all tasks"></button>
+                    <input type="text" placeholder="What needs to be done?" role="textbox" aria-label="add new task">
                 </div>
-            </div>
+            </section>
 
-            <div class="main-panel">
+            <section class="tasks-panel">
                 <div class="todo-list">
                     <div>
                         <label class="list-item">
                             <input type="checkbox" aria-checked="true">
                             <span class="checkmark">HTML</span>
-                            <button aria-pressed="true"></button>
+                            <button aria-label="task was added"></button>
                         </label>
                     </div>
-
 
                     <div>
                         <label class="list-item">
                             <input type="checkbox" aria-checked="true">
                             <span class="checkmark">CSS</span>
-                            <button aria-pressed="true"></button>
+                            <button aria-label="task was added"></button>
                         </label>
                     </div>
 
@@ -46,7 +45,7 @@
                         <label class="list-item">
                             <input type="checkbox" aria-checked="true">
                             <span class="checkmark">JS</span>
-                            <button aria-pressed="true"></button>
+                            <button aria-label="task was added"></button>
                         </label>
                     </div>
 
@@ -54,30 +53,34 @@
                         <label class="list-item">
                             <input type="checkbox" aria-checked="true">
                             <span class="checkmark">JS tools</span>
-                            <button aria-pressed="true"></button>
+                            <button aria-label="task was added"></button>
                         </label>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="bottom-panel">
+            <section class="bottom-panel">
                 <div class="task-counter">
                     <span class="checkmark">3 items left</span>
                 </div>
 
                 <div class="tabs">
-                    <button class="tablinks" id="all-btn" aria-pressed="true">All</button>
-                    <button class="tablinks" id="active-btn" aria-pressed="true">Active</button>
-                    <button class="tablinks" id="completed-btn" aria-pressed="true">Completed</button>
+                    <input type="radio" id="all-id" checked="checked" aria-label="all tasks"/>
+                    <label for="all-id">All</label>
+
+                    <input type="radio" id="active-id" aria-label="active tasks"/>
+                    <label for="active-id">Active</label>
+
+                    <input type="radio" id="completed-id" aria-label="competed tasks"/>
+                    <label for="completed-id">Completed</label>
                 </div>
 
                 <div class="complete-btn">
-                    <button id="clear-complete-btn" aria-pressed="true">Clear completed</button>
+                    <button id="clear-complete-btn" aria-label="clear completed">Clear completed</button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
-
 </body>
 
 </html>
