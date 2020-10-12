@@ -17,66 +17,64 @@
         <main class="main-panel">
 
             <section class="top-panel">
-                <div class="todo-add-action">
+                <div>
                     <button class="select-all-tasks" aria-label="select all tasks"></button>
                     <input type="text" placeholder="What needs to be done?" role="textbox" aria-label="add new task">
                 </div>
             </section>
 
             <section class="tasks-panel">
-                <div class="todo-list">
-                    <div>
-                        <label class="list-item">
-                            <input type="checkbox" aria-checked="true">
-                            <span class="checkmark">HTML</span>
-                            <button aria-label="task was added"></button>
-                        </label>
-                    </div>
+                <ul class="todo-list">
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">HTML</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
 
-                    <div>
-                        <label class="list-item">
-                            <input type="checkbox" aria-checked="true">
-                            <span class="checkmark">CSS</span>
-                            <button aria-label="task was added"></button>
-                        </label>
-                    </div>
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">CSS</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
 
-                    <div>
-                        <label class="list-item">
-                            <input type="checkbox" aria-checked="true">
-                            <span class="checkmark">JS</span>
-                            <button aria-label="task was added"></button>
-                        </label>
-                    </div>
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">JS</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
 
-                    <div>
-                        <label class="list-item">
-                            <input type="checkbox" aria-checked="true">
-                            <span class="checkmark">JS tools</span>
-                            <button aria-label="task was added"></button>
-                        </label>
-                    </div>
-                </div>
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">JS tools</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
+                </ul>
             </section>
 
             <section class="bottom-panel">
                 <div class="task-counter">
-                    <span class="checkmark">3 items left</span>
+                    <span>3 items left</span>
                 </div>
 
-                <div class="tabs">
-                    <input type="radio" id="all-id" checked="checked" aria-label="all tasks"/>
-                    <label for="all-id">All</label>
+                <div class="tabs" role="group">
+                    <div class="all-tab">
+                        <input type="radio" id="all-id" checked="checked" name="filter" aria-label="all tasks" value="All" />
+                        <label for="all-id">All</label>
+                    </div>
 
-                    <input type="radio" id="active-id" aria-label="active tasks"/>
-                    <label for="active-id">Active</label>
+                    <div class="active-tab">
+                        <input type="radio" id="active-id" name="filter" aria-label="active tasks"  value="Active" />
+                        <label for="active-id">Active</label>
+                    </div>
 
-                    <input type="radio" id="completed-id" aria-label="competed tasks"/>
-                    <label for="completed-id">Completed</label>
+                    <div class="completed-tab">
+                        <input type="radio" id="completed-id" name="filter" aria-label="completed tasks" value="Completed" />
+                        <label for="completed-id">Completed</label>
+                    </div>
                 </div>
 
-                <div class="complete-btn">
-                    <button id="clear-complete-btn" aria-label="clear completed">Clear completed</button>
+                <div>
+                    <button class="complete-btn" aria-label="clear completed">Clear completed</button>
                 </div>
             </section>
         </main>
