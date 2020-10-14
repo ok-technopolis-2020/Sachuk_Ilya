@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+
+<body>
+    <div class="todo-app">
+
+        <header class="headline" role="heading">
+            <h1>todos</h1>
+        </header>
+
+        <main class="main-panel">
+
+            <section class="top-panel">
+                <div>
+                    <button class="select-all-tasks-btn" aria-label="select all tasks"></button>
+                    <input type="text" placeholder="What needs to be done?" role="textbox" aria-label="add new task">
+                </div>
+            </section>
+
+            <section class="tasks-panel">
+                <ul class="todo-list">
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">HTML</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">CSS</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">JS</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span class="checkmark">JS tools</span>
+                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="bottom-panel">
+                <div class="task-counter">
+                    <span>3 items left</span>
+                </div>
+
+                <div class="tabs" role="group">
+                    <div class="all-tab">
+                        <input type="radio" id="all-id" checked="checked" name="filter" aria-label="all tasks" value="All" />
+                        <label for="all-id">All</label>
+                    </div>
+
+                    <div class="active-tab">
+                        <input type="radio" id="active-id" name="filter" aria-label="active tasks"  value="Active" />
+                        <label for="active-id">Active</label>
+                    </div>
+
+                    <div class="completed-tab">
+                        <input type="radio" id="completed-id" name="filter" aria-label="completed tasks" value="Completed" />
+                        <label for="completed-id">Completed</label>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="clear-complete-btn" aria-label="clear completed">Clear completed</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
