@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>TODO</title>
 </head>
 
@@ -17,36 +18,40 @@
         <main class="main-panel">
 
             <section class="top-panel">
-                <div>
-                    <button class="select-all-tasks-btn" aria-label="select all tasks"></button>
-                    <input type="text" placeholder="What needs to be done?" role="textbox" aria-label="add new task">
+                <div class="manage-panel">
+                    <button class="manage-panel__select-all-tasks-btn" aria-label="select all tasks"></button>
+                    <input class="manage-panel__textbox" type="text" placeholder="What needs to be done?" role="textbox" aria-label="add new task">
                 </div>
             </section>
 
             <section class="tasks-panel">
                 <ul class="todo-list">
-                    <li>
-                        <input type="checkbox">
-                        <span class="checkmark">HTML</span>
-                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    <li class="todo-list__item">
+                        <input class="todo-list__input" type="checkbox">
+                        <span class="todo-list__checkbox"></span>
+                        <span class="todo-list__checkmark">HTML</span>
+                        <button class="todo-list__delete-btn" aria-label="task was deleted"></button>
                     </li>
 
-                    <li>
-                        <input type="checkbox">
-                        <span class="checkmark">CSS</span>
-                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    <li class="todo-list__item">
+                        <input class="todo-list__input" type="checkbox">
+                        <span class="todo-list__checkbox"></span>
+                        <span class="todo-list__checkmark">CSS</span>
+                        <button class="todo-list__delete-btn" aria-label="task was deleted"></button>
                     </li>
 
-                    <li>
-                        <input type="checkbox">
-                        <span class="checkmark">JS</span>
-                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    <li class="todo-list__item">
+                        <input class="todo-list__input" type="checkbox">
+                        <span class="todo-list__checkbox"></span>
+                        <span class="todo-list__checkmark">JS</span>
+                        <button class="todo-list__delete-btn" aria-label="task was deleted"></button>
                     </li>
 
-                    <li>
-                        <input type="checkbox">
-                        <span class="checkmark">JS tools</span>
-                        <button class="delete-btn" aria-label="task was deleted"></button>
+                    <li class="todo-list__item">
+                        <input class="todo-list__input" type="checkbox">
+                        <span class="todo-list__checkbox"></span>
+                        <span class="todo-list__checkmark">JS tools</span>
+                        <button class="todo-list__delete-btn" aria-label="task was deleted"></button>
                     </li>
                 </ul>
             </section>
