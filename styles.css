@@ -3,6 +3,7 @@
 :root {
     --gray-color: #CCCCCC;
     --active-color: #FAFAFA;
+    --strikethrough-text-color: #CCCCCC;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 .todo-app {
     width: 562px;
-    border: 1px solid ;
+    border: 1px solid var(--gray-color);
 }
 
 header h1 {
@@ -41,6 +42,11 @@ header h1 {
     border: 0;
     height: 65px;
     width: 534px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+
 }
 
 .todo-list {
@@ -55,10 +61,6 @@ header h1 {
     border: 1px solid var(--gray-color);
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.todo-list__item:hover {
-    background-color: var(--active-color);
 }
 
 .todo-list__input {
@@ -90,15 +92,77 @@ header h1 {
     background: no-repeat center url("img/galochka.svg");
 }
 
+.todo-list__input:checked ~ .todo-list__checkmark {
+    color: var(--strikethrough-text-color);
+    text-decoration: line-through;
+}
+
+/* .todo-list__input:focus ~ .todo-list__item {
+    background-color: var(--active-color); 
+} */
+
+.todo-list__input:focus ~ .todo-list__delete-btn {
+    visibility: visible;
+}
+
 .todo-list__delete-btn {
     background: no-repeat center url("img/delete-btn.svg");
     border: none;
     width: 20px;
     height: 20px;
+    visibility: hidden;
+}
+
+.todo-list__item:hover{
+    background-color: var(--active-color);
+}
+
+.todo-list__item:hover .todo-list__delete-btn{
+    visibility: visible;
 }
 
 .todo-list__checkmark {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 300;
+}
+
+.bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bottom-panel__task-counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.bottom-panel__tabs {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.bottom-panel__tab::before {
+    
+}
+
+ .bottom-panel__tabs input[type=radio] {
+    appearance: none;
+} 
+
+.bottom-panel__clear-btn {
+    margin-right: 10px;
+}
+
+.clear-complete-btn {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: 0;
+    padding: 0;
 }
