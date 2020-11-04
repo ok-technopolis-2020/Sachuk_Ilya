@@ -16,10 +16,10 @@ body {
 }
 
 .todo-app {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 5%; */
+    margin-top: 5%;
     background-color: var(--app-color);
     width: 562px;
 }
@@ -115,7 +115,7 @@ header h1 {
 } */
 
 .todo-list__input:checked + .todo-list__checkbox {
-    background: no-repeat center url("img/galochka.svg");
+    background: no-repeat center url("img/checkmark.svg");
 }
 
 .todo-list__input:checked ~ .todo-list__checkmark {
@@ -170,8 +170,6 @@ header h1 {
 .todo-list__checkmark {
     padding: 0;
     width: 450px;
-    /* margin-left: 10px; */
-    /* flex-grow: 1; */
     border: 0;
 }
 
