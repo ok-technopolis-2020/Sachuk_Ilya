@@ -20,8 +20,8 @@ body {
     flex-direction: column;
     margin: 0 auto;
     margin-top: 5%;
-    background-color: var(--app-color);
     width: 562px;
+    background-color: var(--app-color);
 }
 
 
@@ -87,6 +87,23 @@ header h1 {
     padding-bottom: 10px;
 }
 
+.todo-list__item:hover{
+    background-color: var(--active-color);
+}
+
+.todo-list__item:hover .todo-list__delete-btn{
+    background: no-repeat center url("img/delete-btn.svg");
+}
+
+.todo-list__item:hover .todo-list__checkmark {
+    background-color: var(--active-color);
+}
+
+/* не вижу есть ли разница*/
+.todo-list__item:hover .todo-list__checkbox {
+    background-color: var(--app-color);
+}
+
 .todo-list__input {
     margin: 0px;
     margin-left: 11px;
@@ -97,22 +114,6 @@ header h1 {
     height: 40px;
     position: absolute;
 }
-
-.todo-list__checkbox {
-    margin-left: 11px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--checkbox-color);
-    border-radius: 20px;
-}
-
-/* .todo-list__input:checked + .todo-list__checkbox::before{
-    width: 40px;
-    height: 39px;
-    content: "";
-    display: block;
-    background: no-repeat center url("img/galochka.svg");
-} */
 
 .todo-list__input:checked + .todo-list__checkbox {
     background: no-repeat center url("img/checkmark.svg");
@@ -131,40 +132,12 @@ header h1 {
     cursor: pointer;
 }
 
-.todo-list__delete-btn:focus {
-    background: no-repeat center url("img/delete-btn.svg");
-}
-
-.todo-list__delete-btn:hover {
-    cursor: pointer;
-}
-
-.todo-list__delete-btn {
-    padding: 0;
-    background-color: var(--app-color);
-    border: none;
-    width: 20px;
-    height: 20px;
-    margin-right: 22px;
-}
-
-
-
-.todo-list__item:hover{
-    background-color: var(--active-color);
-}
-
-.todo-list__item:hover .todo-list__delete-btn{
-    background: no-repeat center url("img/delete-btn.svg");
-}
-
-.todo-list__item:hover .todo-list__checkmark {
-    background-color: var(--active-color);
-}
-
-/* не вижу есть ли разница*/
-.todo-list__item:hover .todo-list__checkbox {
-    background-color: var(--app-color);
+.todo-list__checkbox {
+    margin-left: 11px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--checkbox-color);
+    border-radius: 20px;
 }
 
 .todo-list__checkmark {
@@ -181,6 +154,23 @@ header h1 {
 
 .todo-list__checkmark:hover {
     cursor: text;
+}
+
+.todo-list__delete-btn {
+    padding: 0;
+    background-color: var(--app-color);
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 22px;
+}
+
+.todo-list__delete-btn:focus {
+    background: no-repeat center url("img/delete-btn.svg");
+}
+
+.todo-list__delete-btn:hover {
+    cursor: pointer;
 }
 
 .bottom-panel {
