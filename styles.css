@@ -16,10 +16,14 @@ body {
 }
 
 .todo-app {
+    /* display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5%; */
     background-color: var(--app-color);
     width: 562px;
-    /* border: 1px solid var(--gray-color); */
 }
+
 
 header h1 {
     margin: 0;
@@ -31,6 +35,9 @@ header h1 {
     background-color: var(--background-app-color);
 }
 
+.main-panel {
+    box-shadow: 2px 2px 4px 0px rgba(34, 60, 80, 0.2);
+}
 
 .manage-panel {
     height: 66px;
@@ -52,8 +59,8 @@ header h1 {
 
 .manage-panel__textbox {
     border: 0;
-    height: 65px;
-    width: 534px;
+    height: 63px;
+    width: 532px;
 
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -114,6 +121,10 @@ header h1 {
 .todo-list__input:checked ~ .todo-list__checkmark {
     color: var(--strikethrough-text-color);
     text-decoration: line-through;
+}
+
+.todo-list__input:checked ~ .todo-list__checkmark {
+   pointer-events: none;
 }
 
 .todo-list__input:hover {
