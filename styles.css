@@ -65,7 +65,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-style: italic;
-
 }
 
 .manage-panel__textbox:hover {
@@ -196,29 +195,28 @@ body {
     font-size: 14px;
 }
 
-.botton-panel__input:checked + .bottom-panel__label::before {
-    border-radius: 5px;
-    position: absolute;
-    display: inline;
-    content: "";
-    height: 21px;
-    width: 65px;
+.botton-panel__input {
+    appearance: none;
+}  
+
+.bottom-panel__label {
+    border: 1px solid transparent;
+    padding: 0.5px 7px;
+}
+
+.botton-panel__input:checked + .bottom-panel__label {
+    height: 22px;
+    border-radius: 3px;
     border: 1px solid #EBDFDF;
 }
 
-/* .botton-panel__input:checked + .bottom-panel__label {
-    width: 100px;
-    border-radius: 10px;
-    border: 1px solid #EBDFDF;
-} */
+.botton-panel__input:focus + .bottom-panel__label {
+    border: 1px solid black;
+}
 
-/* .botton-panel__input:focus + .bottom-panel__label {
-    border: 1px solid #EBDFDF;
-} */
-
- .bottom-panel__tabs input[type=radio] {
-    appearance: none;
-} 
+.bottom-panel__label:hover {
+    cursor: pointer;
+}
 
 .bottom-panel__clear-btn {
     margin-right: 10px;
