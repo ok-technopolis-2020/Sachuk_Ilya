@@ -60,6 +60,7 @@ body {
 }
 
 .manage-panel__textbox {
+    margin-left: 1px;
     border: 0;
     height: 63px;
     width: 532px;
