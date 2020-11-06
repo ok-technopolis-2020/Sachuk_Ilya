@@ -25,7 +25,7 @@ body {
 }
 
 
-header h1 {
+.headline__app-name {
     margin: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -36,7 +36,7 @@ header h1 {
 }
 
 .main-panel {
-    box-shadow: 2px 2px 4px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .manage-panel {
@@ -99,7 +99,6 @@ header h1 {
     background-color: var(--active-color);
 }
 
-/* не вижу есть ли разница*/
 .todo-list__item:hover .todo-list__checkbox {
     background-color: var(--app-color);
 }
@@ -142,7 +141,7 @@ header h1 {
 
 .todo-list__checkmark {
     padding: 0;
-    width: 450px;
+    width: 440px;
     border: 0;
 }
 
@@ -160,8 +159,8 @@ header h1 {
     padding: 0;
     background-color: var(--app-color);
     border: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 22px;
 }
 
@@ -197,9 +196,25 @@ header h1 {
     font-size: 14px;
 }
 
-.bottom-panel__tab::before {
-    
+.botton-panel__input:checked + .bottom-panel__label::before {
+    border-radius: 5px;
+    position: absolute;
+    display: inline;
+    content: "";
+    height: 21px;
+    width: 65px;
+    border: 1px solid #EBDFDF;
 }
+
+/* .botton-panel__input:checked + .bottom-panel__label {
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #EBDFDF;
+} */
+
+/* .botton-panel__input:focus + .bottom-panel__label {
+    border: 1px solid #EBDFDF;
+} */
 
  .bottom-panel__tabs input[type=radio] {
     appearance: none;
