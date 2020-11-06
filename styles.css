@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
-    --gray-color: #CCCCCC;
-    --active-color: #FAFAFA;
-    --strikethrough-text-color: #CCCCCC;
+    --gray-color: #cccccc;
+    --active-color: #fafafa;
+    --strikethrough-text-color: #cccccc;
     --background-app-color: #f5f5f5;
     --app-color: #ffffff;
-    --checkbox-color:  #E6E6E6;
+    --checkbox-color:  #e6e6e6;
+    --tabs-border-color:  #ebdfdf;
+    --tabs-focus-color: #000000;
 }
 
 body {
@@ -207,11 +209,11 @@ body {
 .botton-panel__input:checked + .bottom-panel__label {
     height: 22px;
     border-radius: 3px;
-    border: 1px solid #EBDFDF;
+    border: 1px solid var(--tabs-border-color);
 }
 
 .botton-panel__input:focus + .bottom-panel__label {
-    border: 1px solid black;
+    border: 1px solid var(--tabs-focus-color);
 }
 
 .bottom-panel__label:hover {
