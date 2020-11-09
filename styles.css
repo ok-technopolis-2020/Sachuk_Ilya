@@ -9,6 +9,7 @@
     --checkbox-color:  #e6e6e6;
     --tabs-border-color:  #ebdfdf;
     --tabs-focus-color: #000000;
+    --placeholder-color: #cccccc;
 }
 
 body {
@@ -48,7 +49,7 @@ body {
 }
 
 .manage-panel__select-all-tasks-btn {
-    width: 28px;
+    width: 64px;
     height: 66px;
     background: no-repeat center url("img/select-all-tasks-btn.svg");
     border: 0;
@@ -63,11 +64,16 @@ body {
     margin-left: 1px;
     border: 0;
     height: 63px;
-    width: 532px;
+    width: 520px;
 
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    font-style: normal;
+}
+
+.manage-panel__textbox::-webkit-input-placeholder {
     font-style: italic;
+    color: var(--placeholder-color);
 }
 
 .manage-panel__textbox:hover {
