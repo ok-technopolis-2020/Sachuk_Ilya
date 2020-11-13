@@ -1,0 +1,100 @@
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.todo-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--background-app-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+        background-color: var(--active-color);
+
+        .todo-list__delete-btn {
+            background: no-repeat center url("/img/delete-btn.svg");
+        }
+        
+        .todo-list__checkmark {
+            background-color: var(--active-color);
+        }
+
+        .todo-list__checkbox {
+            background-color: var(--app-color);
+        }
+    }
+}
+
+.todo-list__input {
+    margin: 0px;
+    margin-left: 11px;
+    appearance: none;
+    --webkit-appearance:none;
+    
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:checked {
+        
+        + .todo-list__checkbox {
+            background: no-repeat center url("/img/checkmark.svg");
+        }
+        
+        ~ .todo-list__checkmark {
+            color: var(--strikethrough-text-color);
+            text-decoration: line-through;
+        }
+
+        ~ .todo-list__checkmark {
+            pointer-events: none;
+         }
+    }
+}   
+
+.todo-list__checkbox {
+    margin-left: 11px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--checkbox-color);
+    border-radius: 20px;
+}
+
+.todo-list__checkmark {
+    padding: 0;
+    width: 440px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+
+    &:hover {
+        cursor: text;
+    }
+}
+
+
+.todo-list__delete-btn {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 22px;
+    border: none;
+    background-color: var(--app-color);
+
+    &:focus {
+        background: no-repeat center url("/img/delete-btn.svg");
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

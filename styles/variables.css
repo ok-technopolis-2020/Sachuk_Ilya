@@ -1,0 +1,11 @@
+:root {
+    --gray-color: #cccccc;
+    --active-color: #fafafa;
+    --strikethrough-text-color: #cccccc;
+    --background-app-color: #f5f5f5;
+    --app-color: #ffffff;
+    --checkbox-color:  #e6e6e6;
+    --tabs-border-color:  #ebdfdf;
+    --tabs-focus-color: #000000;
+    --placeholder-color: #cccccc;
+}

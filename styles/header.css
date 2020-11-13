@@ -1,0 +1,9 @@
+.headline__app-name {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 100px;
+    color: var(--gray-color);
+    background-color: var(--background-app-color);
+}
