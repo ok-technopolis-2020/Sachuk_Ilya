@@ -1,10 +1,10 @@
-@import "/styles/variables.css";
-@import "/styles/todo-list.css";
-@import "/styles/header.css";
-@import "/styles/manage-panel.css";
-@import "/styles/main-panel.css";
-@import "/styles/bottom-panel.css";
-@import "/styles/todo-app.css";
+@import "/components/variables.css";
+@import "/components/todo-list.css";
+@import "/components/header.css";
+@import "/components/manage-panel.css";
+@import "/components/main-panel.css";
+@import "/components/bottom-panel.css";
+@import "/components/todo-app.css";
 
 body {
     margin: 0;
