@@ -1,0 +1,37 @@
+.manage-panel {
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.manage-panel__select-all-tasks-btn {
+    width: 64px;
+    height: 66px;
+    background: no-repeat center url("/img/select-all-tasks-btn.svg");
+    border: 0;
+    padding-left: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.manage-panel__textbox {
+    margin-left: 1px;
+    border: 0;
+    height: 63px;
+    width: 520px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+
+    &:hover {
+        cursor: text;
+    }
+
+    &::-webkit-input-placeholder {
+        font-style: italic;
+        color: var(--placeholder-color);
+    }
+}

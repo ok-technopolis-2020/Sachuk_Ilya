@@ -1,0 +1,66 @@
+.bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border: 0;
+    border-top: 1px solid var(--background-app-color);
+}
+
+.bottom-panel__task-counter {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.bottom-panel__tabs {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.botton-panel__input {
+    appearance: none;
+
+    &:checked {
+        + .bottom-panel__label {
+            height: 22px;
+            border-radius: 3px;
+            border: 1px solid var(--tabs-border-color);
+        }
+    }
+    
+    &:focus {
+        + .bottom-panel__label {
+            border: 1px solid var(--tabs-focus-color);
+        }
+    }
+}  
+
+.bottom-panel__label {
+    padding: 0.5px 7px;
+    border: 1px solid transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.bottom-panel__clear-btn {
+    margin-right: 10px;
+}
+
+.clear-complete-btn {
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    background-color: var(--app-color);
+    font-family: 'Roboto', sans-serif;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
